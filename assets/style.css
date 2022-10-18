@@ -3,17 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: burlywood;
+
+#inicio{
+    background: linear-gradient(63.13deg, #352728 51.04%, #8E5D52 51.05%);
+    height: 100vh;
 }
+
 .container{
-    background: rgba( 255, 255, 255, 0.2 );
+    background: rgba(196, 196, 196, 0.11);
     backdrop-filter: blur( 3px );
     -webkit-backdrop-filter: blur( 3px );
     border-radius: 1px;
     width: 100vw;
     height: 13vh;
-    border-bottom: solid 1px white;
+    border-bottom: solid 0.1px rgba(255, 255, 255, 0.11);
+    box-shadow: red 10px;
+    position: fixed;
     
 }
 
@@ -28,16 +33,55 @@ nav > ul{
     font-size: 1.1em;
     padding-top: 5vh;
 }
+
 li > a{
     text-decoration: none;
-    color: black
+    color: white
 }
+
 li > a:hover{
-    color:#6d28d9
+    color:yellow
 }
+
 img{
     position: absolute;
     margin-left:15vw;
     float: left;
     padding-top:3vh;
+    max-width: 3vw;
+}
+
+.image-r{
+  float: right;
+  margin-right: 27vw;
+
+  
+}
+.intro{
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 25%;
+    line-height: 100%;
+    font-size: 2.5em;
+    font-family: 'Lato' ,sans-serif;
+    margin-left: 10%;
+    color: rgb(230, 230, 230);
+}
+
+#sobre{
+    width: 100%;
+    height: 50vh;
+    background-color: blue;
+}
+.mim{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.mim > span{
+    margin-top: 2%;
+    font-family: 'Lato', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
 }

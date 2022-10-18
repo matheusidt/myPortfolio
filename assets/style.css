@@ -52,17 +52,22 @@ img{
 }
 
 .image-r{
-  float: right;
-  margin-right: 27vw;
+    justify-content: center;
+    margin-left: 13%;
 
-  
+}
+div > img{
+    max-width: 20%;
+    border-radius: 100%
+
+
 }
 .intro{
     flex-direction: column;
     justify-content: center;
-    padding-top: 25%;
+    padding-top: 21%;
     line-height: 100%;
-    font-size: 2.5em;
+    font-size: 2.9em;
     font-family: 'Lato' ,sans-serif;
     margin-left: 10%;
     color: rgb(230, 230, 230);
@@ -84,4 +89,12 @@ img{
     font-size: 2em;
     font-weight: bold;
     color: white;
+}
+.p12{
+    font-size: 0.7em;
+}
+.sec{
+display: flex;
+align-items: center;
+
 }

@@ -4,9 +4,19 @@
     box-sizing: border-box;
 }
 
-#inicio{
-    background: linear-gradient(63.13deg, #352728 51.04%, #8E5D52 51.05%);
-    height: 100vh;
+#inicio-nav{
+    background: #171717;
+    height: 13vh;
+    width: 100vw;
+    margin-bottom: 10;
+    z-index: 1;
+}
+#inicio-intro{
+    background: #171717;
+    border-bottom: solid 1px rgb(72, 64, 64);
+    height: 85vh;
+    width: 100vw;
+    
 }
 
 .container{
@@ -19,6 +29,7 @@
     border-bottom: solid 0.1px rgba(255, 255, 255, 0.11);
     box-shadow: red 10px;
     position: fixed;
+    z-index: 1;
     
 }
 
@@ -27,7 +38,7 @@ nav > ul{
     list-style: none;
     float: right;
     margin-right: 15vw;
-    gap: 5vw;
+    gap: 3vw;
     font-weight: bold;
     font-family:  'Lato' , sans-serif;
     font-size: 1.1em;
@@ -36,11 +47,23 @@ nav > ul{
 
 li > a{
     text-decoration: none;
-    color: white
+    color: white;
+    border-radius: 2vh;
+    padding: 6px 15px;
 }
 
 li > a:hover{
-    color:yellow
+    background-color: rgb(255, 255, 255);
+    color: #1d1f35;
+}
+#destaque-hab{
+    background-color: aqua;
+    color: #1d1f35;
+
+
+}
+#destaque-hab:hover{
+    background-color: rgb(1, 171, 171);
 }
 
 img{
@@ -54,29 +77,31 @@ img{
 .image-r{
     justify-content: center;
     margin-left: 13%;
-
+    
+   
+    
 }
-div > img{
-    max-width: 20%;
-    border-radius: 100%
-
-
+#image-intro{
+    max-width: 13%;
+    border-radius: 50%;
+    
 }
+
 .intro{
     flex-direction: column;
     justify-content: center;
-    padding-top: 21%;
+    padding-top: 15%;
     line-height: 100%;
-    font-size: 2.9em;
+    font-size: 3em;
     font-family: 'Lato' ,sans-serif;
     margin-left: 10%;
     color: rgb(230, 230, 230);
 }
 
 #sobre{
-    width: 100%;
-    height: 50vh;
-    background-color: blue;
+    width: 100vw;
+    height: 80vh;
+    background-color: #262626;
 }
 .mim{
     display: flex;
@@ -86,9 +111,10 @@ div > img{
 .mim > span{
     margin-top: 2%;
     font-family: 'Lato', sans-serif;
-    font-size: 2em;
-    font-weight: bold;
+    font-size: 1.9em;
+    font-weight: 500;
     color: white;
+    text-transform: uppercase;
 }
 .p12{
     font-size: 0.7em;
@@ -96,5 +122,38 @@ div > img{
 .sec{
 display: flex;
 align-items: center;
+}
 
+.cont{
+    display: inline;
+    align-items: center;
+    
+}
+
+#img-left{
+    max-width: 13%;
+    margin-top: 20vh;
+    margin-left: 19%;
+    float: left;
+    
+}
+    
+
+#sobre-right{
+    color: white;
+    font-weight: 500;
+    font-size: 1.2em;
+    font-family: 'Lato' , sans-serif;
+    float: right;
+    margin-top: 21vh;
+    margin-right: 10vw;
+}
+#sobre-right h1{
+    font-size: 3em;
+}
+
+#projetos{
+    width: 100vw;
+    height: 70vh;
+    background-color: blue;
 }
